@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Store - Your Best Marketplace</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <button 
+          class="navbar-toggler"
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarResponsive" 
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a href="/reward.html" class="nav-link">Reward</a>
+            </li>
+            <ul class="navbar-nav d-inline-block d-lg-none">
+              <li class="nav-item">
+                <a href="#" class="nav-link d-inline-block">
+                  Hi Andika
+                </a>
+              </li>
+              <li class="nav-item d-inline-block">
+                <a href="#" class="nav-link d-inline-block mt-2">
+                  Cart
+                </a>
+              </li>
+            </ul>
+          </ul>
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle" 
+                href="#" 
+                id="navbarDropdown" 
+                role="button" 
+                data-toggle="dropdown" 
+                aria-haspopup="true" 
+                aria-expanded="false"
+              >
+                <img 
+                  src="/images/icon-user.png" 
+                  alt="user profile"
+                  class="rounded-circle mr-2 profile-picture"
+                >
+                Hi Andika
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/dashboard.html">Dashboard</a>
+                <a class="dropdown-item" href="/settings.html">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/logout.html">Logout</a>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="nav-link d-inline-block mt-2">
+                <img src="images/icon-cart-empty.svg" alt="icon cart">
+                <div class="cart-badge">
+                  3
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- content-->
+    <div class="page-content page-cart">
+      <section class="store-breadcrumb">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 bg-transparent">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active">
+                    Cart
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="items-table" data-aos="fade-up" delay="100">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col" style="width: 20%;">Image</th>
+                    <th scope="col" style="width: 35%;">Name & Seller</th>
+                    <th scope="col" style="width: 30;">Price</th>
+                    <th scope="col" style="width: 15%;">Menu</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+                  <tr class="item-row">
+                    <td style="width: 20%;">
+                      <img
+                        src="/images/products-tatakan-gelas.jpg"
+                        alt="item image"
+                        class="cart-image"
+                      >
+                    </td>
+                    <td style="width: 35%;" class=" align-middle">
+                      <div class="item-name">
+                        Sofa Ternyaman
+                      </div>
+                      <div  class="owner">
+                        By Andi Sukko
+                      </div>
+                    </td>
+                    <td style="width: 30%;"  class=" align-middle">
+                      <div class="price">
+                        $ 1,234
+                      </div>
+                      <div class="currency">
+                        USD
+                      </div>
+                    </td>
+                    <td style="width: 15%;"  class=" align-middle">
+                      <a href="#" class="btn btn-remove-cart ">Remove</a>
+                    </td>
+                  </tr>
+                  <tr class="item-row">
+                    <td style="width: 20%;">
+                      <img
+                        src="/images/products-tatakan-gelas.jpg"
+                        alt="item image"
+                        class="cart-image"
+                      >
+                    </td>
+                    <td style="width: 35%;"  class=" align-middle">
+                      <div class="item-name">
+                        Sofa Ternyaman
+                      </div>
+                      <div class="owner">
+                        By Andi Sukko
+                      </div>
+                    </td>
+                    <td style="width: 30%;"  class=" align-middle">
+                      <div class="price">
+                        $ 1,234
+                      </div>
+                      <div class="currency">
+                        USD
+                      </div>
+                    </td>
+                    <td style="width: 15%;"  class="align-middle">
+                      <a href="#" class="btn btn-remove-cart">Remove</a>
+                    </td>
+                  </tr>
+                  <tr class="item-row">
+                    <td style="width: 20%;">
+                      <img
+                        src="/images/products-tatakan-gelas.jpg"
+                        alt="item image"
+                        class="cart-image"
+                      >
+                    </td>
+                    <td style="width: 35%;"  class=" align-middle">
+                      <div class="item-name">
+                        Sofa Ternyaman
+                      </div>
+                      <div class="owner">
+                        By Andi Sukko
+                      </div>
+                    </td>
+                    <td style="width: 30%;"  class=" align-middle">
+                      <div class="price">
+                        $ 1,234
+                      </div>
+                      <div class="currency">
+                        USD
+                      </div>
+                    </td>
+                    <td style="width: 15%;"  class="align-middle">
+                      <a href="#" class="btn btn-remove-cart">Remove</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <hr />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-cart">
+        <div class="shipping-detail">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                Shipping Details
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <label for="ads">asd</label>
+                  <input id="asd" type="text" class="form-control" placeholder="Surakatta">
+                </div>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="pt-4 pb-2">
+              Andika 2022
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/navbar-scroll.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

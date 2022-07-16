@@ -1,0 +1,15 @@
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+@import "global.scss";
+@import "fonts.scss";
+@import "navbar.scss";
+
+@import "pages/home";
+@import "pages/detail";
+@import "pages/cart";
+
+@import "components/categories";
+@import "components/products";
+@import "components/breadcrumb";
+
+@import "transition/slide-fade";
