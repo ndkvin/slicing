@@ -9398,6 +9398,37 @@ footer p {
   border-radius: 6px;
   color: white;
 }
+.page-cart .items-table .shipping h2 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0C0D36;
+}
+.page-cart .items-table .payment h2 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0C0D36;
+}
+.page-cart .items-table .payment .producty-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.page-cart .items-table .payment .product-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: #979797;
+}
+
+.success-page .content h2 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #0C0D36;
+}
+.success-page .content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #525252;
+}
 
 .component-categories {
   background: #f4f4f4;

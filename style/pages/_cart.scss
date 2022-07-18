@@ -59,7 +59,35 @@
         }
       }
     }
+
+    .shipping {
+      h2 {
+        font-weight: 700;
+        font-size: 16px;
+
+        color: #0C0D36;
+      }
+    }
+
+    .payment {
+      h2 {
+        font-weight: 700;
+        font-size: 16px;
+
+        color: #0C0D36;
+      }
+
+      .producty-subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      .product-title {
+        font-weight: 400;
+        font-size: 14px;
+        color: #979797;
+      }
+    }
   }
-
-
 }
