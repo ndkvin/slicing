@@ -9430,6 +9430,18 @@ footer p {
   color: #525252;
 }
 
+.page-login h2 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #0C0D36;
+}
+.page-login label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0C0D36;
+}
+
 .component-categories {
   background: #f4f4f4;
   border-radius: 8px;

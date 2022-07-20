@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Store - Your Best Marketplace</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <button 
+          class="navbar-toggler"
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarResponsive" 
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a href="/reward.html" class="nav-link">Reward</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Content -->
+    <div class="page-content page-login" id="reister">
+      <div class="container">
+        <div class="row  justify-content-center">
+          <div class="col-lg-4">
+            <h2 class="mb-4">
+              Memulai untuk jaul beli
+              dengan cara terbaru
+            </h2>
+            <div class="form" action="">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input
+                  type="text" 
+                  class="form-control is-valid" 
+                  id="fullName" 
+                  name="fullName"
+                  v-model="name"
+                  autofocus
+                >
+              </div>
+              <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <input
+                  type="text" 
+                  class="form-control is-invalid" 
+                  id="emailAddress" 
+                  name="emailAddress"
+                  v-model="email"
+                  autofocus
+                >
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password" 
+                  class="form-control is-invalid" 
+                  id="password" 
+                  name="password"
+                  v-model="password"
+                  autofocus
+                >
+              </div>
+              <div class="form-group">
+                <label>Store</label>
+                <p class="text-muted">
+                  Apakah anda juga ingin membuka toko?
+                </p>
+                <div
+                  class="custom-control custom-radio custom-control-inline"
+                >
+                  <input
+                    class="custom-control-input"
+                    type="radio"
+                    name="is_store_open"
+                    id="openStoreTrue"
+                    v-model="is_store_open"
+                    :value="true"
+                  />
+                  <label class="custom-control-label" for="openStoreTrue"
+                    >Iya, boleh</label
+                  >
+                </div>
+                <div
+                  class="custom-control custom-radio custom-control-inline"
+                >
+                  <input
+                    class="custom-control-input"
+                    type="radio"
+                    name="is_store_open"
+                    id="openStoreFalse"
+                    v-model="is_store_open"
+                    :value="false"
+                  />
+                  <label
+                    makasih
+                    class="custom-control-label"
+                    for="openStoreFalse"
+                    >Enggak, makasih</label
+                  >
+                </div>
+              </div>
+              <div class="form-group" v-if="is_store_open">
+                <label>Nama Toko</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-describedby="storeHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select name="category" class="form-control" id="category">
+                  <option value="" disabled>Select Category</option>
+                </select>
+              </div>
+              <a href="signup.html" type="button" class="w-100 btn btn-success mb-2">Sign Up Now</a>
+              <a href="login.html" type="button" class="w-100 btn btn-light text-secondary">Back to Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="pt-4 pb-2">
+              Andika 2022
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/navbar-scroll.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script src="https://unpkg.com/vue-toasted"></script>
+    <script>
+      Vue.use(Toasted)
+
+      const register = new Vue({
+        el: "#register",
+        mounted() {
+          AOS.init()
+          this.$toasted.error(
+            "Maaf, tampaknya email sudah terdaftar pada sistem kami.",
+            {
+              position: "top-center",
+              className: "rounded",
+              duration: 1000,
+            }
+          )
+        },
+        data: {
+          name: "Angga Hazza Sett",
+          email: "kamujagoan@bwa.id",
+          password: "",
+          is_store_open: false,
+          store_name: "",
+        }
+      })
+    </script>
+  </body>
+</html>
