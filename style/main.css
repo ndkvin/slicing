@@ -9442,6 +9442,96 @@ footer p {
   color: #0C0D36;
 }
 
+.page-dashboard #page-content-wrapper {
+  background-color: #E5E5E5;
+  min-height: 100vh;
+  width: 100vw;
+}
+.page-dashboard #page-content-wrapper .section-content {
+  margin-top: 30px;
+}
+.page-dashboard #page-content-wrapper .section-content .dashboard-heading .dashboard-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #0C0D36;
+}
+.page-dashboard #page-content-wrapper .section-content .dashboard-heading .dashboard-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  color: #9191A9;
+}
+.page-dashboard #page-content-wrapper .section-content .dashboard-content .card {
+  padding: 10px 0;
+  align-items: center;
+  border-radius: 8px;
+}
+.page-dashboard #page-content-wrapper .section-content .dashboard-content .card .dashboard-card-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #C5C5C5;
+}
+.page-dashboard #page-content-wrapper .section-content .dashboard-content .card .dashboard-card-subtitle {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #0C0D36;
+}
+.page-dashboard #page-content-wrapper .section-content .dashboard-content .recent-transactions h5 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #0C0D36;
+}
+.page-dashboard #sidebar-wrapper {
+  margin-top: 60px;
+  margin-left: -15rem;
+  min-height: 100vh;
+  transition: margin 0.25s ease-out;
+}
+.page-dashboard #sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.25rem;
+}
+.page-dashboard #sidebar-wrapper .list-group {
+  width: 15rem;
+}
+.page-dashboard #wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+.page-dashboard .navbar-store {
+  margin-top: 0;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 5px #cacad1;
+}
+@media (min-width: 768px) {
+  .page-dashboard .navbar-store {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+.page-dashboard .list-group-item {
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #c5c5c5;
+}
+.page-dashboard .list-group-item.active {
+  background: linear-gradient(270deg, rgba(255, 113, 88, 0.32) 2%, rgba(255, 255, 255, 0) 100%);
+  color: #0C0D36;
+  border-right: 4px solid #ff7158;
+}
+@media (min-width: 768px) {
+  .page-dashboard #sidebar-wrapper {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .page-dashboard #page-content-wrapper {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
 .component-categories {
   background: #f4f4f4;
   border-radius: 8px;
@@ -9514,6 +9604,20 @@ footer p {
   color: #979797;
 }
 .store-breadcrumb .breadcrumb .breadcrumb-item.active {
+  color: #0C0D36;
+}
+
+.card-list {
+  text-align: center;
+  align-items: center;
+  line-height: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #0C0D36;
+  text-decoration: none;
+}
+.card-list:hover {
+  text-decoration: none;
   color: #0C0D36;
 }
 
