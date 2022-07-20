@@ -9461,8 +9461,7 @@ footer p {
   color: #9191A9;
 }
 .page-dashboard #page-content-wrapper .section-content .dashboard-content .card {
-  padding: 10px 0;
-  align-items: center;
+  padding: 10px 0 10px 20px;
   border-radius: 8px;
 }
 .page-dashboard #page-content-wrapper .section-content .dashboard-content .card .dashboard-card-title {
@@ -9471,7 +9470,6 @@ footer p {
   color: #C5C5C5;
 }
 .page-dashboard #page-content-wrapper .section-content .dashboard-content .card .dashboard-card-subtitle {
-  margin-top: 5px;
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
