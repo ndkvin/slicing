@@ -9557,6 +9557,22 @@ footer p {
   color: #C5C5C5;
   margin: 5px 0 10px 10px;
 }
+.page-dashboard .galerry-container .delete-image {
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+.page-dashboard #transaction-detail .product-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #C5C5C5;
+}
+.page-dashboard #transaction-detail .product-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  color: #0C0D36;
+}
 
 .component-categories {
   background: #f4f4f4;
