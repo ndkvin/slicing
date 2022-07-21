@@ -9461,7 +9461,6 @@ footer p {
   color: #9191A9;
 }
 .page-dashboard #page-content-wrapper .section-content .dashboard-content .card {
-  padding: 10px 0 10px 20px;
   border-radius: 8px;
 }
 .page-dashboard #page-content-wrapper .section-content .dashboard-content .card .dashboard-card-title {
@@ -9528,6 +9527,19 @@ footer p {
     width: 100%;
     min-width: 0;
   }
+}
+.page-dashboard .nav-pills .nav-link {
+  font-weight: 400;
+  font-size: 18px;
+  color: #9191A9;
+  background-color: #E5E5E5;
+  border-radius: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+.page-dashboard .nav-pills .nav-link.active {
+  border-bottom: 2px solid #0C0D36;
+  color: #0C0D36;
 }
 
 .component-categories {
