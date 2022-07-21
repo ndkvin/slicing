@@ -29,7 +29,7 @@
           <a href="/dashboard.html" class="list-group-item list-group-item-action">
             Dashboard
           </a>
-          <a href="/dashboard-product.html" class="list-group-item list-group-item-action">
+          <a href="/dashboard-product.html" class="list-group-item list-group-item-action active">
             My Product
           </a>
           <a href="/dashboard-transaction.html" class="list-group-item list-group-item-action">
@@ -38,7 +38,7 @@
           <a href="/dashboard-setting.html" class="list-group-item list-group-item-action">
             Store Settings
           </a>
-          <a href="/dashboard-account.html" class="list-group-item list-group-item-action active">
+          <a href="/dashboard-account.html" class="list-group-item list-group-item-action">
             My Account
           </a>
           <a href="/dashboard-account.html" class="mt-auto list-group-item list-group-item-action">
@@ -122,138 +122,93 @@
         </nav>
 
         <!-- Section Content -->
-        <div class="section-content section-dashboard-setting" data-aos="fade-up">
+        <div class="section-content section-dashboard-settings" data-aos="fade-up">
           <div class="container-fluid">
             <div class="dashboard-heading">
               <h2 class="dashboard-title">
-                My Account
+                Create New Product
               </h2>
               <p class="dashboard-subtitle">
-                Update your current profile
+                Create your own product
               </p>      
             </div>
             <div class="container dashboard-setting">
               <div class="card px-4 py-4">
                 <div class="row">
                   <div class="col-12">
-                    <div class="form">
+                    <form action="">
                       <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                           <div class="form-group">
-                            <label for="name">Your Name</label>
+                            <label>Product Name</label>
                             <input
-                              type="text" 
-                              class="form-control" 
-                              id="addressOne" 
+                              type="text"
+                              class="form-control"
+                              aria-describedby="productName"
                               name="name"
-                              value="Sentra Duta Cemara"
-                              >
+                              id="name"
+                              value="Paper"
+                            />
                           </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                           <div class="form-group">
-                            <label for="email">Your Email</label>
+                            <label>Price</label>
                             <input
-                              type="email" 
-                              class="form-control" 
-                              id="email" 
-                              name="email"
-                              value="Sentra Duta Cemara"
-                              >
+                              type="text"
+                              class="form-control"
+                              aria-describedby="price"
+                              name="price"
+                              id="price"
+                              value="$123,456"
+                            />
                           </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-12">
                           <div class="form-group">
-                            <label for="addressOne">Address 1</label>
-                            <input
-                              type="text" 
-                              class="form-control" 
-                              id="addressOne" 
-                              name="addressOne"
-                              value="Sentra Duta Cemara"
-                              >
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="addressTwo">Address 2</label>
-                            <input
-                              type="text" 
-                              class="form-control" 
-                              id="addressTwo" 
-                              name="addressTwo"
-                              value="Sentra Duta Cemara"
-                              >
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="Province">Province</label>
-                            <input
-                              type="text" 
-                              class="form-control" 
-                              id="Province" 
-                              name="Province"
-                              value="West Java"
-                              >
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="city">City</label>
-                            <input
-                              type="text" 
-                              class="form-control" 
-                              id="city" 
-                              name="city"
-                              value="Bandung"
-                              >
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="postalCode">Postal Code</label>
-                            <input
-                              type="text" 
-                              class="form-control" 
-                              id="postalCode" 
-                              name="postalCode"
-                              value="123456"
-                              >
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="country">Country</label>
-                            <input
-                              type="text" 
-                              class="form-control" 
-                              id="country" 
-                              name="country"
-                              value="Indonesia"
-                              >
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="mobilePhone">Mobile Phone</label>
-                            <input
-                              type="text" 
-                              class="form-control" 
-                              id="mobilePhone" 
-                              name="mobilePhone"
-                              value="+628123456789"
+                            <label>Category</label>
+                            <select 
+                              name="category" 
+                              class="form-control"
+                              id="category"
                             >
+                              <option value="shipping">Shipping</option>
+                              <option value="opration">Opration</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label>Description</label>
+                            <textarea
+                              class="editor form-control"
+                              id="editor"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label>Thumnails</label>
+                            <input
+                              type="file"
+                              class="form-control editor"
+                              aria-describedby="thumnails"
+                              name="thumnails"
+                              id="thumnails"
+                            >
+                            <small class="text-muted">
+                              Kamu dapat memilih lebih dari satu file
+                            </small>
                           </div>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col text-right">
-                          <button type="submit" class="btn btn-success px-5">Save Now</button>
+                        <div class="col-12">
+                          <button type="submit" class="w-100 btn btn-success">Create Product</button>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </form>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -276,6 +231,10 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled")
       })
+    </script>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <script>
+      CKEDITOR.replace('editor');
     </script>
   </body>
 </html>
